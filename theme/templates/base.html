@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'" />
+        <meta name="robots" content="noarchive, notranslate" />
+        {% if SITESUBTITLE %}
+        <meta name="description" content="{{ SITESUBTITLE }}" />
+        {% endif %}
+        <link
+            rel="icon"
+            href="favicon.ico"
+            sizes="16x16 24x24 32x32 64x64"
+            type="image/vnd.microsoft.icon"
+        />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% endblock head %}
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
+</head>
+
+<body id="index" class="home">
+        <div id="all-except-footer">
+        <header id="banner" class="body">
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                {% if SITESUBTITLE %}<strong>{{ SITESUBTITLE }}</strong>{% endif %}
+        </header><!-- /#banner -->
+        <nav id="menu">
+                <p>Categories:</p>
+                <ul>
+          {% for cat, null in categories %}
+            <li><a href="{{ SITEURL }}/{{ cat.url }}"{% if cat == category %} class="active"{% endif %}>{{ cat }}</a></li>
+          {% endfor %}
+        </ul></nav><!-- /#menu -->
+        {% block content %}
+        {% endblock %}
+        </div>
+        <footer id="contentinfo" class="body">
+                <a href="https://www.explorewilder.com/#!/en/about">Written and published by Clément Fontaine</a>.
+                Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a>.
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

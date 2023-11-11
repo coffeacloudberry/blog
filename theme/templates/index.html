@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+{% block content_title %}
+<h2 id="all-articles">All articles
+{% if FEED_ALL_ATOM %}
+    <a
+            title="Get the Atom feed"
+            href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}"
+            type="application/atom+xml"
+            rel="alternate"><img src="{{ SITEURL }}/theme/images/logo-rss.svg" class="icon" alt="" /></a>
+{% endif %}
+</h2>
+{% endblock %}
+
+<ol id="post-list">
+{% for article in articles_page.object_list %}
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                {% if article.summary %}<h3 class="summary">{{ article.summary }}</h3>{% endif %}
+            <footer class="post-info">
+                    <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                </footer><!-- /.post-info -->
+        </article></li>
+{% endfor %}
+</ol><!-- /#posts-list -->
+</section>
+{% endblock content %}

@@ -1,0 +1,123 @@
+@font-face {
+	font-family: 'MyBodyFont';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/ExploreWilder-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'MyBoldFont';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/ExploreWilder-bold-webfont.woff2') format('woff2');
+}
+
+html, body {
+  	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+
+body {
+    color : #333 ;
+    min-width : 400px ;
+    min-height : 200px ;
+    margin : 0 15% ;
+    font-family: "MyBodyFont", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, strong {
+	font-weight: normal;
+	font-family: "MyBoldFont", sans-serif;
+}
+
+h3.summary {
+	margin-top: -0.5rem;
+    font-family: "MyBodyFont", sans-serif;
+	font-size: 1.2rem;
+}
+
+#all-except-footer {
+    flex: 1 0 auto;
+}
+
+h2.entry-title {
+	margin-top: 0;
+}
+
+h2 .icon {
+	width: 24px;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+a .icon {
+	filter: invert(38%) sepia(90%) saturate(280%) hue-rotate(92deg) brightness(98%) contrast(94%);
+}
+
+a:hover .icon {
+	filter: invert(32%) sepia(6%) saturate(3080%) hue-rotate(92deg) brightness(88%) contrast(94%);
+}
+
+a, a:visited {
+	color : #2e8f6b ;
+	text-decoration : underline ;
+	text-underline-position: under;
+	text-underline-offset: 0;
+}
+
+a:hover {
+	color : #29593d ;
+}
+
+ol#post-list {
+    list-style: none;
+	padding: 0;
+}
+
+article, section#content {
+	border: 1px solid #333;
+	border-radius: 0 .6rem 0 .6rem;
+	padding: 1em;
+	margin: 2em 0;
+}
+
+section#content img {
+	max-width: 100%;
+	border-radius: 0.2rem;
+}
+
+nav#menu ul {
+	padding: 0;
+}
+
+nav#menu ul li {
+	display: inline;
+}
+
+nav#menu ul li a {
+	border: 1px solid #333;
+	border-radius: 0 .6rem 0 .6rem;
+	display: inline-block;
+	padding: 0.5rem;
+}
+
+footer.post-info {
+	font-size: small;
+}
+
+nav#menu ul li a.active {
+	color: #333;
+}
+
+nav#menu ul li a.active:hover {
+	color: #29593d;
+}
+
+footer#contentinfo {
+    flex-shrink: 0;
+	padding: 0 0 2em 0;
+}

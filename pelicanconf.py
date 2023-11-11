@@ -1,10 +1,37 @@
 AUTHOR = 'Clément Fontaine'
-SITENAME = 'Blog'
+SITENAME = "Clément's Blog"
+SITESUBTITLE = "Articles about hiking, skiing, cooking in the backcountry, thoughts about the outdoor and wilderness."
 SITEURL = ''
+THEME = 'theme'
+STATIC_PATHS = [
+    'static/robots.txt',
+    'static/favicon.ico',
+    'static/apple-touch-icon.png',
+    ]
+EXTRA_PATH_METADATA = {
+    'static/robots.txt': {'path': 'robots.txt'},
+    'static/favicon.ico': {'path': 'favicon.ico'},
+    'static/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    }
 
 PATH = 'content'
-
-TIMEZONE = 'Europe/Rome'
+IMAGE_PROCESS = {
+    "article-image": {
+        "type": "responsive-image",
+        "sizes": (
+            "(min-width: 1200px) 800px, "
+            "(min-width: 992px) 650px, "
+            "(min-width: 768px) 718px, "
+            "100vw"
+        ),
+        "srcset": [
+            ("600w", ["scale_in 600 450 True"]),
+            ("800w", ["scale_in 800 600 True"]),
+            ("1600w", ["scale_in 1600 1200 True"]),
+        ],
+        "default": "800w",
+    },
+}
 
 DEFAULT_LANG = 'en'
 
@@ -14,18 +41,4 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-# Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
 DEFAULT_PAGINATION = False
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True

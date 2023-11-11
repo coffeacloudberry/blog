@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Clément's Blog - My GPSMAP 66sr Config</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'" http-equiv="Content-Security-Policy"/>
+<meta content="noarchive, notranslate" name="robots"/>
+<meta content="Articles about hiking, skiing, cooking in the backcountry, thoughts about the outdoor and wilderness." name="description"/>
+<link href="favicon.ico" rel="icon" sizes="16x16 24x24 32x32 64x64" type="image/vnd.microsoft.icon"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://blog.explorewilder.com/feeds/all.atom.xml" rel="alternate" title="Clément's Blog Full Atom Feed" type="application/atom+xml"/>
+<link href="https://blog.explorewilder.com/theme/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="home" id="index">
+<div id="all-except-footer">
+<header class="body" id="banner">
+<h1><a href="https://blog.explorewilder.com/">Clément's Blog</a></h1>
+<strong>Articles about hiking, skiing, cooking in the backcountry, thoughts about the outdoor and wilderness.</strong> </header><!-- /#banner -->
+<nav id="menu">
+<p>Categories:</p>
+<ul>
+<li><a href="https://blog.explorewilder.com/category/food.html">Food</a></li>
+<li><a class="active" href="https://blog.explorewilder.com/category/outdoor-tips.html">Outdoor Tips</a></li>
+<li><a href="https://blog.explorewilder.com/category/photography.html">Photography</a></li>
+<li><a href="https://blog.explorewilder.com/category/random.html">Random</a></li>
+</ul></nav><!-- /#menu -->
+<section class="body" id="content">
+<header>
+<h2 class="entry-title">
+      My GPSMAP 66sr Config</h2>
+<h3 class="summary"><p>My handheld GPS configuration for hiking</p></h3>
+</header>
+<footer class="post-info">
+<time class="published" datetime="2023-11-13T00:00:00+00:00">
+      Published: Mon 13 November 2023
+    </time>
+</footer><!-- /.post-info -->
+<div class="entry-content">
+<p>I have the Garmin GPSMAP 64sc and recently upgraded to the GPSMAP 66sr for a better screen and GPS signal. This article is not a device review but how I set it up to my needs as a hiker and backcountry skier. Basically, map quality, battery, and fast startup are important. The <a href="https://support.garmin.com/en-US/?faq=jptru9E32f6q0zydcdtXh9">multi-band GPS</a> chip in the 66sr has a faster time to fix (time to locate after startup) and better signal stability than the 64sc.</p>
+<p><img alt="Multi-band" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/596.png"/></p>
+<p>Side notes, contrary to the 66sr user manual, <a href="https://support.garmin.com/en-US/?faq=QciNGsFuPs1CeNvI9OAhI6">the 66sr does not have WAAS/EGNOS</a>. "This is due to the multi-band technology" according to the Garmin support team. Also, notice that the 66sr turns off below -20 degC, whereas the 64sc is working fine below -26. That is an issue for my winter trips. One would recommend to keep the battery on the warm body, but the 66sr battery cannot be removed.</p>
+<h2>TopoActice: Off</h2>
+<p>TopoActive maps are not needed, they do not include DEM data, and POIs are anyway included in Garmin TOPO PRO maps and 3rd party OSM-based maps. The internal storage could therefore be used for actually useful maps.</p>
+<h2>Map of Finland, Sweden, Norway</h2>
+<p>A free and good topo map of Finland is MTK Suomi (<a href="https://kartat.hylly.org/">website</a>, <a href="https://github.com/pailakka/mtk2garmin">GitHub</a>). It really looks like the government map. On my trip to Sweden, I used the <a href="http://www.frikart.no/garmin/velgkart.html">Frikart.no</a> maps. They are not okay for off-track navigation but at least it is loading fine and good enough alongside the paper map. The expensive TOPO Sweden v6 map by Garmin is not working with the 66sr and not displayed properly on the 64sc (I sent the map back and got refund). The TOPO Norway PRO by Garmin is looking better than Frikart or <a href="https://garmin.opentopomap.org/">OpenTopoMap</a> and loading okay. I did not try the Finnish map from Garmin since MTK Suomi is great.</p>
+<h2>DEM</h2>
+<p>Free maps do not include Digital Elevation Model (DEM), but it can be downloaded from <a href="https://alternativaslibres.org/en/dem.php">alternativaslibres.org</a> generated with data provided by AW3D30 of the Japan Aerospace Exploration Agency, created with mkgmap and splitter. Notice that DEM data will still be available even if the DEM map is disabled, so MTK Suomi is enabled for viewing the map and DEM is disabled but used for elevation data.</p>
+<p><img alt="Maps" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/613.png"/></p>
+<p>Information without DEM:</p>
+<p><img alt="Information without DEM" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/103.png"/></p>
+<p>Information with DEM:</p>
+<p><img alt="Information with DEM" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/171.png"/> <img alt="Elevation profile" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/201.png"/></p>
+<h2>Startup Message</h2>
+<p>The startup message can be edited. I added my name and contact information in case I lose my device.</p>
+<h2>Storages</h2>
+<p>The planned tracks/routes (GPX files) have to be in the external SD card (into /Garmin/GPX/) to be used for navigation. Maps can be either in the internal or the external storage.</p>
+<h2>Logging</h2>
+<h3>GPX Data</h3>
+<p>Save points with interval in distance so that the track is clean. On the other hand, if saving every minute, there might be some noise during snack breaks.</p>
+<p><img alt="Tracking Options" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/1076.png"/></p>
+<h3>RINEX: Off</h3>
+<p><a href="https://support.garmin.com/en-US/?faq=7iMJZdoCcM2562XlKlMC76">RINEX is a new feature</a> I do not need. It takes lots of internal memory, and probably consuming battery to save the files. Therefore, it is disabled.</p>
+<p><img alt="RINEX Logging Off" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/55.png"/></p>
+<h2>Other Stuff</h2>
+<h3>Position Format For Sweden</h3>
+<p>Always carry a paper map. In Sweden, the position format is SWEREF 99 TM. To ease locating yourself on the paper map, the device can have the same position format.</p>
+<p><img alt="Position format" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/1422.png"/></p>
+<h3>Compass &amp; Map Settings</h3>
+<p>I always re-calibrate my compass at the beginning of every trip. Despite calibration, the compass is not so accurate and I like the map to be still, so my North Reference is Grid.</p>
+<p><img alt="North reference" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/1795.png"/></p>
+<p>If using vector maps, the amount of details can be changed:</p>
+<p><img alt="Amount of details" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/698.png"/></p>
+<h3>Routing &amp; Course Alerts</h3>
+<p>I go off-track, so routing is direct and unlocked. Also, I was happily surprised to see a new option after the firmware update: it is possible to disable course alerts to avoid the annoying "bip" when the planned track is well detailed but not following your actual path.</p>
+<p><img alt="Course alerts" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/109.png"/></p>
+<h3>Power Saving</h3>
+<p><img alt="Power saving options" src="https://blog.explorewilder.com/images/My_GPSMAP_66sr_Config/630.png"/></p>
+<p>The backlight is off. Overnight, I prefer to use my headlight to see the screen. The GPS 66sr battery cannot be removed whereas my light is easy to charge and I have extra batteries.</p>
+</div><!-- /.entry-content -->
+</section>
+</div>
+<footer class="body" id="contentinfo">
+<a href="https://www.explorewilder.com/#!/en/about">Written and published by Clément Fontaine</a>.
+                Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a>.
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
