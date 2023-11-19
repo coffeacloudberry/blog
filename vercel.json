@@ -21,6 +21,10 @@
                     "value": "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; frame-ancestors 'none'"
                 },
                 {
+                    "key": "Permissions-Policy",
+                    "value": "geolocation=(), camera=(), microphone=()"
+                },
+                {
                     "key": "Referrer-Policy",
                     "value": "strict-origin"
                 },
