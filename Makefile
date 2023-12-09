@@ -55,4 +55,4 @@ publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
 
-.PHONY: html help clean regenerate devserver publish github
+.PHONY: html help clean regenerate devserver publish
