@@ -1,15 +1,8 @@
 @font-face {
-	font-family: 'MyBodyFont';
+	font-family: 'MyFont';
 	font-style: normal;
 	font-weight: normal;
 	src: url('../fonts/ExploreWilder-regular-webfont.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'MyBoldFont';
-	font-style: normal;
-	font-weight: bold;
-	src: url('../fonts/ExploreWilder-bold-webfont.woff2') format('woff2');
 }
 
 html, body {
@@ -21,23 +14,17 @@ html, body {
 }
 
 body {
-    color : #333 ;
-    min-width : 400px ;
-    min-height : 200px ;
-    margin : 0 15% ;
-    font-family: "MyBodyFont", sans-serif;
+    color: #333;
+    min-width: 400px;
+    min-height: 200px;
+    margin: 0 15%;
+    font-family: "MyFont", sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-h1, h2, h3, strong {
-	font-weight: normal;
-	font-family: "MyBoldFont", sans-serif;
-}
-
 h3.summary {
 	margin-top: -0.5rem;
-    font-family: "MyBodyFont", sans-serif;
 	font-size: 1.2rem;
 }
 
@@ -63,14 +50,14 @@ a:hover .icon {
 }
 
 a, a:visited {
-	color : #2e8f6b ;
-	text-decoration : underline ;
+	color: #2e8f6b;
+	text-decoration: underline;
 	text-underline-position: under;
 	text-underline-offset: 0;
 }
 
 a:hover {
-	color : #29593d ;
+	color: #29593d;
 }
 
 ol#post-list {
