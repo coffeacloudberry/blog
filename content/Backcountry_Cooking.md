@@ -424,6 +424,39 @@ Instructions:
 
 The recipe is like the ANZAC biscuit filled with rich ingredients. The ANZAC biscuit is the most famous biscuit in New Zealand and Australia and used by the joint army of the same name – just “ANZAC” without “biscuits.” I haven’t find the best recipe yet, hope you will share it to me! Also, think about different shapes: biscuits, slices, squares, etc.
 
+## Florentines
+
+![Florentines]({static}/images/Backcountry_Cooking/24.jpg){: .image-process-article-image}
+
+The Florentine is named after Florence, a city in Italy. The recipe requires an oven and a pan to melt chocolate. Almond flour contains more fat, fiber, and protein than plain flour, but less carb. They are both fine.
+
+Makes 9 to 12:
+
+* 150 g chocolate
+* 150 g pieces of nuts (f.i. almond slices, shredded coconut)
+* 100 g fruit mix
+* 50 g almond flour
+* 1 dl or 100 g Yoghurt or cream
+* 50 g honey
+* 100 g sugar
+* oil and/or flour to avoid sticky surface
+
+Instructions:
+
+1. Grill the almond slices if they are not already roasted.
+2. Cut the fruit mix if needed.
+3. Mix the honey, sugar, and yoghurt and bring it to boil.
+4. Stop the heating and add the nuts and fruits, and mix.
+5. Progressively add the flour to the mix.
+6. Let it cool down.
+7. Preheat the oven to 180°C.
+8. Drop the mixture into the greased oven tin and shape it, and bake for 10 minutes.
+9. Take the tin out, wait, and remove the Florentines from the tin.
+10. Melt the chocolate in a bain-marie.
+11. Spread the chocolate on the Florentines.
+
+Store in the fridge.
+
 # Dinner
 
 ## Mashed Potatoes

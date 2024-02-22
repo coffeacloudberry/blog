@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Clément's Blog - Setup QMapShack For Norway</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'" http-equiv="Content-Security-Policy"/>
+<meta content="noarchive, notranslate" name="robots"/>
+<meta content="Articles about hiking, skiing, cooking in the backcountry, thoughts about the outdoor and wilderness." name="description"/>
+<link href="favicon.ico" rel="icon" sizes="16x16 24x24 32x32 64x64" type="image/vnd.microsoft.icon"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://blog.explorewilder.com/feeds/all.atom.xml" rel="alternate" title="Clément's Blog Full Atom Feed" type="application/atom+xml"/>
+<link href="https://blog.explorewilder.com/theme/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="home" id="index">
+<div id="all-except-footer">
+<header class="body" id="banner">
+<h1><a href="https://blog.explorewilder.com/">Clément's Blog</a></h1>
+<strong>Articles about hiking, skiing, cooking in the backcountry, thoughts about the outdoor and wilderness.</strong> </header><!-- /#banner -->
+<nav id="menu">
+<p>Categories:</p>
+<ul>
+<li><a href="https://blog.explorewilder.com/category/food.html">Food</a></li>
+<li><a class="active" href="https://blog.explorewilder.com/category/outdoor-tips.html">Outdoor Tips</a></li>
+<li><a href="https://blog.explorewilder.com/category/photography.html">Photography</a></li>
+<li><a href="https://blog.explorewilder.com/category/random.html">Random</a></li>
+</ul></nav><!-- /#menu -->
+<section class="body" id="content">
+<header>
+<h2 class="entry-title">
+      Setup QMapShack For Norway</h2>
+<h3 class="summary"><p>Configure the map and coordinates to match the Norge-serien topo maps with QMapShack</p></h3>
+</header>
+<footer class="post-info">
+<time class="published" datetime="2024-02-22T00:00:00+00:00">
+      Published: Thu 22 February 2024
+    </time>
+</footer><!-- /.post-info -->
+<div class="entry-content">
+<h1>Map Layer</h1>
+<p>Use the <em>Norway Topo</em> maps from the Norwegian Mapping Authority (Statens kartverk). The layer is almost identical to the <a href="https://www.norgeskart.no/#!?project=norgeskart&amp;layers=1002&amp;zoom=12&amp;lat=7861962.42&amp;lon=949126.47">Kartverket</a> map and the <a href="https://www.dntbutikken.no/kart">Norge-serien paper maps</a>.</p>
+<h1>Map Grid</h1>
+<p><img alt="QMapShack grid overview" class="image-process-article-image" sizes="(min-width: 1200px) 800px, (min-width: 992px) 650px, (min-width: 768px) 718px, 100vw" src="https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/800w/qmapshack_norway.png" srcset="https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/600w/qmapshack_norway.png 600w, https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/800w/qmapshack_norway.png 800w, https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/1600w/qmapshack_norway.png 1600w"/></p>
+<p>The Norge-serien paper topo maps are using the <a href="https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989">EUREF89</a> datum. The grid is projected with the <a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system">Universal Transverse Mercator (UTM)</a>. The grid zone is written on the map, panning from <a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#/media/File:Modified_UTM_Zones.png">zone 32 to 36</a>. To change the grid, go to View -&gt; Setup Grid and type <code>+proj=utm +zone=35 +units=m +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs +type=crs</code> (change the zone to yours). The QMapShack documentation related to the <a href="https://pygis.io/docs/d_crs_what_is_it.html">CRS</a> is <a href="https://github.com/Maproom/qmapshack/wiki/EpsgOverview#properties-of-some-commonly-used-coordinate-systems">here</a>.</p>
+<p><img alt="UTM zones" class="image-process-article-image" sizes="(min-width: 1200px) 800px, (min-width: 992px) 650px, (min-width: 768px) 718px, 100vw" src="https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/800w/modified_UTM_zones.png" srcset="https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/600w/modified_UTM_zones.png 600w, https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/800w/modified_UTM_zones.png 800w, https://blog.explorewilder.com/images/QMapShack_For_Norway/derivatives/article-image/1600w/modified_UTM_zones.png 1600w"/></p>
+<h1>GPS Format</h1>
+<p>The GPS location can be changed to match the paper map that uses N??°?? E??°??. Go to View -&gt; Setup Coord. Format.</p>
+</div><!-- /.entry-content -->
+</section>
+</div>
+<footer class="body" id="contentinfo">
+<a href="https://www.explorewilder.com/#!/en/about">Written and published by Clément Fontaine</a>.
+                <a href="https://photog.social/@explorewilder" rel="me">Mastodon</a>.
+                Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a>.
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

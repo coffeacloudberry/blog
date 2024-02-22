@@ -37,7 +37,9 @@ The startup message can be edited. I added my name and contact information in ca
 
 ## Storages
 
-The planned tracks/routes (GPX files) have to be in the external SD card (into /Garmin/GPX/) to be used for navigation. Maps can be either in the internal or the external storage.
+The planned tracks/routes (GPX files) have to be in the external SD card (into /Garmin/GPX/) to be used for navigation. On the other hand, uploading the route from the Garmin Explore mobile app into the internal storage is okay. The 64sc can have the GPX in the internal memory (in /Garmin/GPX/).
+
+Maps can be either in the internal or the external storage.
 
 ## Logging
 
