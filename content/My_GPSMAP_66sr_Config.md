@@ -1,5 +1,5 @@
 Title: My GPSMAP 66sr Config
-Date: 2023-11-13 00:00
+Date: 2024-02-25 00:00
 Category: Outdoor Tips
 Summary: My handheld GPS configuration for hiking
 
@@ -16,6 +16,12 @@ TopoActive maps are not needed, they do not include DEM data, and POIs are anywa
 ## Map of Finland, Sweden, Norway
 
 A free and good topo map of Finland is MTK Suomi ([website](https://kartat.hylly.org/), [GitHub](https://github.com/pailakka/mtk2garmin)). It really looks like the government map. On my trip to Sweden, I used the [Frikart.no](http://www.frikart.no/garmin/velgkart.html) maps. They are not okay for off-track navigation but at least it is loading fine and good enough alongside the paper map. The expensive TOPO Sweden v6 map by Garmin is not working with the 66sr and not displayed properly on the 64sc (I sent the map back and got refund). The TOPO Norway PRO by Garmin is looking better than Frikart or [OpenTopoMap](https://garmin.opentopomap.org/) and loading okay. I did not try the Finnish map from Garmin since MTK Suomi is great.
+
+## Garmin Topo Norway PRO
+
+Notice that the official Garmin map of Norway (Topo Norway PRO) has two different line profiles, elevation line every 20m or elevation line every 10m. The change is sudden and may be confusing at first:
+
+![Maps]({static}/images/My_GPSMAP_66sr_Config/325.png)
 
 ## DEM
 

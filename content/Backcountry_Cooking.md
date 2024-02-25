@@ -1,5 +1,5 @@
 Title: Backcountry Cooking
-Date: 2022-09-16 00:00
+Date: 2024-02-24 00:00
 Category: Food
 Summary: My cooking experience for multi-day hiking and skiing trips
 
