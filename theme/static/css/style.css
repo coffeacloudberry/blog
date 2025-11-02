@@ -15,9 +15,8 @@ html, body {
 
 body {
     color: #333;
-    min-width: 400px;
     min-height: 200px;
-    margin: 0 15%;
+    margin: 0 1rem;
     font-family: "MyFont", sans-serif;
     display: flex;
     flex-direction: column;
