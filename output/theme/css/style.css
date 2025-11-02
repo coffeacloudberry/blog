@@ -13,6 +13,19 @@ html, body {
 	font-size: 1rem;
 }
 
+h2 .icon {
+	width: 24px;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+a .icon {
+	filter: invert(38%) sepia(90%) saturate(280%) hue-rotate(92deg) brightness(98%) contrast(94%);
+}
+
+a:hover .icon {
+	filter: invert(32%) sepia(6%) saturate(3080%) hue-rotate(92deg) brightness(88%) contrast(94%);
+}
+
 body {
     color: #333;
     min-height: 200px;
