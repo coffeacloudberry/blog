@@ -10,13 +10,15 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	line-height: 1.6;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 body {
     color: #333;
     min-height: 200px;
-    margin: 0 1rem;
+    max-width: 768px;
+    margin: auto;
+    padding: 0 1rem;
     font-family: "MyFont", sans-serif;
     display: flex;
     flex-direction: column;
@@ -24,28 +26,28 @@ body {
 
 h3.summary {
 	margin-top: -0.5rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 #all-except-footer {
     flex: 1 0 auto;
 }
 
+h3 {
+	font-size: 1.1rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
 h2.entry-title {
 	margin-top: 0;
+	font-size: 1.6rem;
 }
 
-h2 .icon {
-	width: 24px;
-}
-
-/* https://codepen.io/sosuke/pen/Pjoqqp */
-a .icon {
-	filter: invert(38%) sepia(90%) saturate(280%) hue-rotate(92deg) brightness(98%) contrast(94%);
-}
-
-a:hover .icon {
-	filter: invert(32%) sepia(6%) saturate(3080%) hue-rotate(92deg) brightness(88%) contrast(94%);
+h1 {
+	font-size: 1.4rem;
 }
 
 a, a:visited {
@@ -65,9 +67,6 @@ ol#post-list {
 }
 
 article, section#content {
-	border: 1px solid #333;
-	border-radius: 0 .6rem 0 .6rem;
-	padding: 1em;
 	margin: 2em 0;
 }
 
@@ -81,7 +80,8 @@ nav#menu ul {
 }
 
 nav#menu ul li {
-	display: inline;
+	display: inline-block;
+	margin: 0.2rem 0;
 }
 
 nav#menu ul li a {
